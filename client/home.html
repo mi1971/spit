@@ -1,0 +1,119 @@
+
+
+<template name="home">
+<h1>Home <small>Page</small></h1>
+    {{> activityAdd}}
+    {{> activityList}}
+</template>
+
+<template name="activityList">
+    {{#each activities}}
+        {{> activityItem}}
+    {{/each}}
+</template>
+
+<template name="activityItem">
+    <div class="activity {{selected}}">
+        <img class="img-small pull-left" src="person-icon.jpg" />
+        <button type="button btn-small" class="pull-right btn btn-default dropdown-toggle expand-activity" data-toggle="dropdown">
+            <span class="caret"></span>
+            <!--<span class="caret"></span>-->
+        </button>
+        <div style="padding-left:35px; padding-right: 35px;">
+            {{> activityTask}}
+            {{note}} {{> timeStamp createdAt}}
+            <div class="activity-expanded">
+
+            </div>
+            <!--{{> activityButtons}}-->
+        </div>
+
+    </div>
+</template>
+
+<template name="activityExpanded">
+    This is the expanded info...
+    <div class="row">
+    <div class="col-xs-11 col-xs-offset-1">
+        <textarea id="note" placeholder="What's on you're mind?" class="form-control" style="margin-top:5px; margin-bottom:5px;" rows = "2"></textarea>
+    </div>
+    </div>
+</template>
+
+<template name="activityAdd" >
+    <textarea id="note" placeholder="What's on you're mind?" class="form-control" rows = "3"></textarea>
+</template>
+
+<template name="timeStamp">
+    <!--<time class="timeago" datetime="{{this}}" title="{{this}}">{{this}}</time>-->
+    <span data-livestamp="{{this}}" class="time-stamp" title="{{formatDate this "short"}}"></span>
+</template>
+
+<template name="activityTask">
+
+    <div class="btn-group">
+
+        <div class="btn-group" style="margin-bottom: 5px;">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                <span class="glyphicon glyphicon-user"></span> Matt Ireland
+                <!--<span class="caret"></span>-->
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="#">Colin Mason</a></li>
+                <li><a href="#">Debbie Hard</a></li>
+            </ul>
+        </div>
+
+        <div class="btn-group">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                <!--<span class="glyphicon glyphicon-user"></span>-->
+                <!--<span class="caret"></span>-->
+                Tomorrow
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="#">Today</a></li>
+                <li><a href="#">Tomorrow</a></li>
+                <li><a href="#">Friday</a></li>
+                <li><a href="#">Monday</a></li>
+
+            </ul>
+        </div>
+    </div>
+
+</template>
+
+<template name="activityButtons">
+    <div class="padding-small {{hidden}}">
+        <button class="btn btn-primary">Assign</button>
+
+        <div class="btn-group">
+            <button type="button" class="btn btn-default">1</button>
+            <button type="button" class="btn btn-default">2</button>
+
+            <div class="btn-group">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    <span class="glyphicon glyphicon-time"></span>
+                    <!--<span class="caret"></span>-->
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Dropdown link</a></li>
+                    <li><a href="#">Dropdown link</a></li>
+                </ul>
+            </div>
+
+            <div class="btn-group">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    <span class="glyphicon glyphicon-user"></span>
+                    <!--<span class="caret"></span>-->
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Dropdown link</a></li>
+                    <li><a href="#">Dropdown link</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</template>
+
+

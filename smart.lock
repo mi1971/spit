@@ -1,0 +1,56 @@
+{
+  "meteor": {},
+  "dependencies": {
+    "basePackages": {
+      "bootstrap-3": {},
+      "iron-router": {},
+      "single-page-login": {},
+      "moment": {},
+      "timeago": {},
+      "livestamp": {},
+      "bootstrap3-datepicker": {}
+    },
+    "packages": {
+      "bootstrap-3": {
+        "git": "https://github.com/mangasocial/meteor-bootstrap-3.git",
+        "tag": "v3.1.1-1",
+        "commit": "63dd38968828bb8963636df93e9a1c45e2dfe67e"
+      },
+      "iron-router": {
+        "git": "https://github.com/EventedMind/iron-router.git",
+        "tag": "v0.7.1",
+        "commit": "d1ffb3f06ea4c112132b030f2eb1a70b81675ecb"
+      },
+      "single-page-login": {
+        "git": "https://github.com/EtherPOS/single-page-login.git",
+        "tag": "v0.2.1",
+        "commit": "cce3b0101bdb110013f4af148f6716b77c155583"
+      },
+      "moment": {
+        "git": "https://github.com/acreeger/meteor-moment.git",
+        "tag": "v2.6.0",
+        "commit": "26156df681750fd6e6ed77043eef32b6653ebbdf"
+      },
+      "timeago": {
+        "git": "https://github.com/Differential/timeago.git",
+        "tag": "v0.0.4",
+        "commit": "60914e8ea3d930febc724febdf137bcd818cb49d"
+      },
+      "livestamp": {
+        "git": "https://github.com/colllin/meteor-livestamp.git",
+        "tag": "v1.1.2-3",
+        "commit": "d161b9de53d7032511ecaa13486b6b5cb11f71f3"
+      },
+      "bootstrap3-datepicker": {
+        "git": "https://github.com/rajit/bootstrap3-datepicker.git",
+        "tag": "v0.2.1",
+        "commit": "442484eb1c8eb00c6b9e0e9c88accc934cf8f04a"
+      },
+      "blaze-layout": {
+        "git": "https://github.com/EventedMind/blaze-layout.git",
+        "tag": "v0.2.4",
+        "commit": "b40e9b0612329288d75cf52ad14a7da64bb8618f"
+      }
+    }
+  }
+}

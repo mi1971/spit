@@ -1,0 +1,11 @@
+{
+  "packages": {
+    "bootstrap-3": {},
+    "iron-router": {},
+    "single-page-login": {},
+    "moment": {},
+    "timeago": {},
+    "livestamp": {},
+    "bootstrap3-datepicker": {}
+  }
+}

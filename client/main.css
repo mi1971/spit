@@ -1,0 +1,60 @@
+/* CSS declarations go here */
+a {
+    cursor: pointer;
+}
+
+div.test {
+    border: dashed 2px #c0c0c0;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    padding: 4px;
+}
+
+div.activity {
+    margin-top: 3px;
+    margin-bottom: 3px;
+    padding: 4px;
+}
+
+div.selected {
+    border: solid 1px #66afe9;
+    background-color: #EFF8FB;
+    -moz-box-shadow: 0 0 3px 3px #CEE3F6;
+    -webkit-box-shadow: 0 0 3px 3px #CEE3F6;
+    box-shadow: 0 0 3px 3px #CEE3F6;
+}
+
+
+.time-stamp {
+    font-size: small;
+    color: #c0c0c0;
+}
+
+.time-stamp:before{
+    content: ' - ';
+}
+
+.img-small{
+    height:20px;
+    width:20px;
+
+}
+
+.margin-right-small{
+    margin-right: 5;
+}
+
+.padding-small{
+    padding:5px;
+}
+
+.right-caret {
+    border-bottom: 4px solid transparent;
+    border-top: 4px solid transparent;
+    border-left: 4px solid #000000;
+    display: inline-block;
+    height: 0;
+    opacity: 0.3;
+    vertical-align: top;
+    width: 0;
+}
