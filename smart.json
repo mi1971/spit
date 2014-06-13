@@ -6,6 +6,7 @@
     "moment": {},
     "timeago": {},
     "livestamp": {},
-    "bootstrap3-datepicker": {}
+    "bootstrap3-datepicker": {},
+    "metro-ui2": {}
   }
 }
