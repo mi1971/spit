@@ -8,8 +8,7 @@
       "moment": {},
       "timeago": {},
       "livestamp": {},
-      "bootstrap3-datepicker": {},
-      "metro-ui2": {}
+      "bootstrap3-datepicker": {}
     },
     "packages": {
       "bootstrap-3": {
@@ -46,11 +45,6 @@
         "git": "https://github.com/rajit/bootstrap3-datepicker.git",
         "tag": "v0.2.1",
         "commit": "442484eb1c8eb00c6b9e0e9c88accc934cf8f04a"
-      },
-      "metro-ui2": {
-        "git": "https://github.com/chrismbeckett/meteor-metro-ui2.git",
-        "tag": "v0.1.0",
-        "commit": "afbbdf2a643af16630feb36cbca537b839203117"
       },
       "blaze-layout": {
         "git": "https://github.com/EventedMind/blaze-layout.git",

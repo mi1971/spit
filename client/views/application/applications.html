@@ -1,34 +1,8 @@
-<!--<template name="applications">-->
-    <!--<h1>Applications <small>List</small></h1>-->
-    <!--{{#each applications}}-->
-        <!--<div class="tile double bg-cyan">-->
-            <!--<div class="tile-content icon">-->
-                <!--<i class="icon-user"></i>-->
-            <!--</div>-->
-            <!--<div class="tile-status">-->
-                <!--<span class="name">{{client}}</span>-->
-            <!--</div>-->
-        <!--</div>-->
-    <!--{{/each}}-->
-<!--</template>-->
-
-
-
-
 <template name="applications">
-<div class="listview">
+    <h1>Applications <small>List</small></h1>
     {{#each applications}}
-    <a href="#" class="list selected">
-        <div class="list-content">
-            <img src="http://metroui.org.ua/images/onenote2013icon.png" class="icon">
-            <div class="data">
-                <span class="list-title">{{client}}</span>
-                <div class="progress-bar small" data-role="progress-bar"
-                     data-value="75"></div>
-                <span class="list-remark">Download...75%</span>
-            </div>
+        <div>
+        {{client}}
         </div>
-    </a>
     {{/each}}
-</div>
 </template>

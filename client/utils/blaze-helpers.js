@@ -12,7 +12,3 @@ UI.registerHelper("formatDate", function(datetime, format) {
         return datetime;
     }
 });
-
-UI.body.rendered = function() {
-    $.Metro.initAll();
-}

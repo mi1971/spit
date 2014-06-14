@@ -1,17 +1,4 @@
 /* CSS declarations go here */
-
-@media (min-width: 979px) {
-    body {
-        padding-top: 30px;
-    }
-}
-
-a:hover {text-decoration: none}
-
-#navSearch{
-    color: #003399;
-}
-
 a {
     cursor: pointer;
 }
