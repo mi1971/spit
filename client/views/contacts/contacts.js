@@ -1,3 +1,3 @@
 Template.contacts.contacts = function(){
-    //return Applications.find({}); //, {sort:{createdAt:-1}});
+    return Contacts.find({}); //, {sort:{createdAt:-1}});
 }

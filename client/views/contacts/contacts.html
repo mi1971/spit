@@ -1,8 +1,10 @@
 <template name="contacts">
     <h1>Contacts <small>List</small></h1>
-    {{#each applications}}
+    {{#each contacts}}
         <div>
-        {{client}}
+        {{firstName}} {{lastName}}
+        <p>{{address1}}<br/>
+        {{cityStatePostcode}}</p>
         </div>
     {{/each}}
 </template>
