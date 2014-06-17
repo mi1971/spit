@@ -9,7 +9,8 @@
       "timeago": {},
       "livestamp": {},
       "bootstrap3-datepicker": {},
-      "gravatar": {}
+      "gravatar": {},
+      "filepicker-plus": {}
     },
     "packages": {
       "bootstrap-3": {
@@ -51,6 +52,11 @@
         "git": "https://github.com/tmeasday/meteor-gravatar.git",
         "tag": "v0.0.4",
         "commit": "d1052ff4401725c23fb199c0e0a36e29b926bc22"
+      },
+      "filepicker-plus": {
+        "git": "https://github.com/nate-strauser/meteor-filepicker-plus.git",
+        "tag": "v1.2.1",
+        "commit": "80b31d01c959b0687d6ff14ece275cfb9f2f63d2"
       },
       "blaze-layout": {
         "git": "https://github.com/EventedMind/blaze-layout.git",
