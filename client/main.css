@@ -58,3 +58,28 @@ div.selected {
     vertical-align: top;
     width: 0;
 }
+
+.mi-card{
+    display:inline-block;
+    border: solid 1px #c0c0c0;
+    margin:1px;
+    height: 80px; width: 250px;
+    padding: 9px;
+    border-radius: 3px;
+    background-color: #FFFFFF;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media screen and (max-width: 700px){
+    .mi-card{
+        display:block;
+        border:none;
+        border-top: solid 1px #c0c0c0;
+        margin:0px;
+        height: 80px; width: 100%;
+        padding: 9px;
+        border-radius: 0px;
+    }
+}

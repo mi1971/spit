@@ -1,10 +1,19 @@
 <template name="contacts">
     <h1>Contacts <small>List</small></h1>
+    <div style="background-color: #F3F3F3">
     {{#each contacts}}
-        <div>
-        {{firstName}} {{lastName}}
-        <p>{{address1}}<br/>
-        {{cityStatePostcode}}</p>
-        </div>
+        {{> contactCard}}
     {{/each}}
+    </div>
+</template>
+
+<template name="contactCard">
+    <div class="mi-card">
+        <img src="person-icon.jpg" class="pull-left" style="width:30px;" />
+        <div style="padding-left:40px">
+        <span style="color:#424242"><b>{{firstName}} {{lastName}}</b></span>
+        <p style="color:#6E6E6E">{{address1}}<br/>
+            {{cityStatePostcode}}</p>
+        </div>
+    </div>
 </template>
