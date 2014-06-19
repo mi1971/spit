@@ -10,9 +10,9 @@ Meteor.subscribe("nothing");
 
 
 
-Template.activityList.activities = function(){
-    return Activities.find({}, {sort:{createdAt:-1}});
-}
+//Template.activityList.activities = function(){
+//    return Activities.find({}, {sort:{createdAt:-1}});
+//}
 
 Template.userMenu.events({
     'click #logout': function() {
