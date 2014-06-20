@@ -2,7 +2,18 @@ Meteor.publish("contactSearch", function(searchText){
 
     searchText = searchText || "";
 
-    return Contacts.find({firstName: new RegExp("^" + searchText + '.*', "i")});
+    searchArr = searchText.split(" ");
+
+    if(searchArr.length == 2 && searchArr[1].length > 0)
+        return Contacts.find({
+            firstName: new RegExp("^" + searchArr[0] + '.*', "i"),
+            lastName: new RegExp("^" + searchArr[1] + '.*', "i")
+        });
+    else
+        return Contacts.find({$or:[
+            {firstName: new RegExp("^" + searchText + '.*', "i")},
+            {lastName: new RegExp("^" + searchText + '.*', "i")}
+        ]});
 })
 
 Meteor.publish("activities", function(){
