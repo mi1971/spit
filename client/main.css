@@ -72,6 +72,7 @@ div.selected {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 560px){
