@@ -1,3 +1,7 @@
+Meteor.publish("contacts", function(){
+    return Contacts.find();
+})
+
 Meteor.publish("contactSearch", function(searchText){
 
     searchText = searchText || "";
@@ -14,6 +18,10 @@ Meteor.publish("contactSearch", function(searchText){
             {firstName: new RegExp("^" + searchText + '.*', "i")},
             {lastName: new RegExp("^" + searchText + '.*', "i")}
         ]});
+})
+
+Meteor.publish("contactSingle", function(id){
+    return Contacts.findOne(id);
 })
 
 Meteor.publish("activities", function(){
