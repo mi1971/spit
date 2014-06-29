@@ -9,6 +9,7 @@
     "bootstrap3-datepicker": {},
     "gravatar": {},
     "filepicker-plus": {},
-    "iron-router-progress": {}
+    "iron-router-progress": {},
+    "jquery-autosize": {}
   }
 }

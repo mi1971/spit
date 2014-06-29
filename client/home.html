@@ -17,15 +17,10 @@
         <img class="img-small pull-left" src="person-icon.jpg" />
         <button type="button btn-small" class="pull-right btn btn-default dropdown-toggle expand-activity" data-toggle="dropdown">
             <span class="caret"></span>
-            <!--<span class="caret"></span>-->
         </button>
-        <div style="padding-left:35px; padding-right: 35px;">
+        <div class="activity-item" style="padding-left:35px; padding-right: 35px;">
             {{> activityTask}}
             {{note}} {{> timeStamp createdAt}}
-            <div class="activity-expanded">
-
-            </div>
-            <!--{{> activityButtons}}-->
         </div>
 
     </div>
@@ -35,7 +30,7 @@
     This is the expanded info...
     <div class="row">
     <div class="col-xs-11 col-xs-offset-1">
-        <textarea id="note" placeholder="What's on you're mind?" class="form-control" style="margin-top:5px; margin-bottom:5px;" rows = "2"></textarea>
+        <textarea class="add-note form-control" placeholder="Add Notes..." style="margin-top:5px; margin-bottom:5px;" rows = "1"></textarea>
     </div>
     </div>
 </template>

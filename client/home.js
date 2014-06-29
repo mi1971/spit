@@ -35,6 +35,7 @@ Template.userMenu.events({
 //            }
 //        });
 //    }
+
 })
 
 Template.activityAdd.events({
@@ -58,11 +59,17 @@ Template.activityAdd.events({
         }
     }
 })
-
 Template.activityItem.events({
     "click .expand-activity": function (e, t) {
-        var el = t.find('.activity-expanded');
-        UI.insert( UI.render( Template.activityExpanded ), el );
+        if($(e.target).hasClass("dropup")) {
+            alert('already up');
+        }
+        else
+        {
+            $(e.target).addClass("dropup");
+            var el = t.find('.activity-item');
+            UI.insert(UI.render(Template.activityExpanded), el);
+        }
     }
 });
 
@@ -83,6 +90,10 @@ Template.activityButtons.helpers({
             return "hidden";
     }
 });
+
+Template.activityExpanded.rendered = function(){
+    $('.add-note').autosize();
+}
 
 
 

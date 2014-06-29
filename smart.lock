@@ -11,7 +11,8 @@
       "bootstrap3-datepicker": {},
       "gravatar": {},
       "filepicker-plus": {},
-      "iron-router-progress": {}
+      "iron-router-progress": {},
+      "jquery-autosize": {}
     },
     "packages": {
       "bootstrap-3": {
@@ -63,6 +64,11 @@
         "git": "https://github.com/Multiply/iron-router-progress.git",
         "tag": "v0.4.0",
         "commit": "02f78bdaca4c13d59f548d5a0ce83408c34b56d1"
+      },
+      "jquery-autosize": {
+        "git": "https://github.com/spendflow/meteor-jquery-autosize.git",
+        "tag": "v1.17.8r1",
+        "commit": "517be3d26cb2901f65d07de94d250e498d07dc48"
       },
       "blaze-layout": {
         "git": "https://github.com/EventedMind/blaze-layout.git",

@@ -1,6 +1,14 @@
 /* CSS declarations go here */
 body {background-color: #F3F3F3}
 
+#iron-router-progress {
+    background-color : #58ACFA;
+}
+
+#iron-router-progress.spinner:before {
+    border-color : #58ACFA;
+}
+
 a {
     cursor: pointer;
 }
@@ -90,3 +98,4 @@ input[type="text"], input[type="submit"], input[type="password"], input[type="em
         border-radius: 0px;
     }
 }
+
