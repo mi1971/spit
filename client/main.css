@@ -61,6 +61,10 @@ div.selected {
     width: 0;
 }
 
+input[type="text"], input[type="submit"], input[type="password"], input[type="email"] {
+    -webkit-appearance: none;
+}
+
 .mi-card{
     display:inline-block;
     border: solid 1px #c0c0c0;

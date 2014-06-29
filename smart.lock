@@ -10,7 +10,8 @@
       "livestamp": {},
       "bootstrap3-datepicker": {},
       "gravatar": {},
-      "filepicker-plus": {}
+      "filepicker-plus": {},
+      "iron-router-progress": {}
     },
     "packages": {
       "bootstrap-3": {
@@ -57,6 +58,11 @@
         "git": "https://github.com/nate-strauser/meteor-filepicker-plus.git",
         "tag": "v1.2.1",
         "commit": "80b31d01c959b0687d6ff14ece275cfb9f2f63d2"
+      },
+      "iron-router-progress": {
+        "git": "https://github.com/Multiply/iron-router-progress.git",
+        "tag": "v0.4.0",
+        "commit": "02f78bdaca4c13d59f548d5a0ce83408c34b56d1"
       },
       "blaze-layout": {
         "git": "https://github.com/EventedMind/blaze-layout.git",

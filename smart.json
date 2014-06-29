@@ -8,6 +8,7 @@
     "livestamp": {},
     "bootstrap3-datepicker": {},
     "gravatar": {},
-    "filepicker-plus": {}
+    "filepicker-plus": {},
+    "iron-router-progress": {}
   }
 }
