@@ -6,6 +6,9 @@ Meteor.publish("contactSearch", function(searchText){
 
     searchText = searchText || "";
 
+    if(searchText.length < 3)
+        return Contacts.find({}, {limit:20});
+
     searchArr = searchText.split(" ");
 
     if(searchArr.length == 2 && searchArr[1].length > 0)
