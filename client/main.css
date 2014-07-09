@@ -34,6 +34,13 @@ div.selected {
     box-shadow: 0 0 3px 3px #CEE3F6;
 }
 
+.form-group.last-group{
+    margin-bottom: 0px;
+}
+
+.modal-footer {
+    margin-top: 0px;
+}
 
 .time-stamp {
     font-size: small;
@@ -69,7 +76,7 @@ div.selected {
     width: 0;
 }
 
-input[type="text"], input[type="submit"], input[type="password"], input[type="email"] {
+input[type="text"], input[type="submit"], input[type="password"], input[type="email"], textarea {
     -webkit-appearance: none;
 }
 

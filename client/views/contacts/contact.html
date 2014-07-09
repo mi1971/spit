@@ -3,65 +3,92 @@
         <small>Page</small>
     </h1>
 
+    {{> contactModal}}
+
+
+</template>
+
+<template name="contactModal">
+    <div class="">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title">Modal title</h4>
+                </div>
+                <div class="modal-body">
+                    {{> contactForm}}
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+</template>
+
+<template name="contactForm">
+
     <form class="form-horizontal" role="form">
-        <div class="container">
-            <div class="row">
 
-                <div class="col-md-6">
+        <!-- First Name -->
+        <div class="form-group">
+            <label for="firstName" class="col-sm-4 control-label">First Name</label>
 
-                    <!-- First Name -->
-                    <div class="form-group">
-                        <label for="firstName" class="col-sm-4 control-label">First Name</label>
-                        <div class="col-sm-8">
-                            <input type="text" value="{{firstName}}" class="form-control" id="firstName" placeholder="">
-                        </div>
-                    </div>
-
-                    <!-- Last Name -->
-                    <div class="form-group">
-                        <label for="lastName" class="col-sm-4 control-label">Last Name</label>
-                        <div class="col-sm-8">
-                            <input type="text" value="{{lastName}}" class="form-control" id="lastName" placeholder="">
-                        </div>
-                    </div>
-
-                    <!-- Email -->
-                    <div class="form-group">
-                        <label for="email" class="col-sm-4 control-label">Email</label>
-                        <div class="col-sm-8">
-                            <input type="email" value="{{email}}" class="form-control" id="email" placeholder="">
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-md-6">
-
-                    <!-- Mobile -->
-                    <div class="form-group">
-                        <label for="mobile" class="col-sm-4 control-label">Mobile</label>
-                        <div class="col-sm-8">
-                            <input type="text" value="{{mobile}}" class="form-control phone-number" id="mobile" placeholder="">
-                        </div>
-                    </div>
-
-                    <!-- Work Phone -->
-                    <div class="form-group">
-                        <label for="workPhone" class="col-sm-4 control-label">Work Phone</label>
-                        <div class="col-sm-8">
-                            <input type="text" value="{{workPhone}}" class="form-control phone-number" id="workPhone" placeholder="">
-                        </div>
-                    </div>
-
-                    <!--Home Phone -->
-                    <div class="form-group">
-                        <label for="homePhone" class="col-sm-4 control-label">Home Phone</label>
-                        <div class="col-sm-8">
-                            <input type="text"  value="{{homePhone}}" class="form-control phone-number" id="homePhone" placeholder="">
-                        </div>
-                    </div>
-                </div>
-
+            <div class="col-sm-8">
+                <input type="text" value="{{firstName}}" class="form-control" id="firstName" placeholder="">
             </div>
         </div>
+
+        <!-- Last Name -->
+        <div class="form-group">
+            <label for="lastName" class="col-sm-4 control-label">Last Name</label>
+
+            <div class="col-sm-8">
+                <input type="text" value="{{lastName}}" class="form-control" id="lastName" placeholder="">
+            </div>
+        </div>
+
+        <!-- Email -->
+        <div class="form-group">
+            <label for="email" class="col-sm-4 control-label">Email</label>
+
+            <div class="col-sm-8">
+                <input type="email" value="{{email}}" class="form-control" id="email" placeholder="">
+            </div>
+        </div>
+
+        <br/>
+
+        <!-- Mobile -->
+        <div class="form-group">
+            <label for="mobile" class="col-sm-4 control-label">Mobile</label>
+
+            <div class="col-sm-8">
+                <input type="text" value="{{mobile}}" class="form-control phone-number" id="mobile" placeholder="">
+            </div>
+        </div>
+
+        <!-- Work Phone -->
+        <div class="form-group">
+            <label for="workPhone" class="col-sm-4 control-label">Work Phone</label>
+
+            <div class="col-sm-8">
+                <input type="text" value="{{workPhone}}" class="form-control phone-number" id="workPhone"
+                       placeholder="">
+            </div>
+        </div>
+
+        <!--Home Phone -->
+        <div class="form-group last-group">
+            <label for="homePhone" class="col-sm-4 control-label">Home Phone</label>
+
+            <div class="col-sm-8">
+                <input type="text" value="{{homePhone}}" class="form-control phone-number" id="homePhone"
+                       placeholder="">
+            </div>
+        </div>
+
     </form>
 </template>
