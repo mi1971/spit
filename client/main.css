@@ -1,5 +1,7 @@
 /* CSS declarations go here */
-body {background-color: #F3F3F3}
+body {
+    /*background-color: #F3F3F3*/
+}
 
 #iron-router-progress {
     background-color : #58ACFA;
