@@ -1,0 +1,26 @@
+<template name="layoutClient">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Meteor Test</title>
+    </head>
+    <body>
+    {{> headerClient}}
+    <div class="container">
+    {{> yield}}
+    </div>
+    </body>
+</template>
+
+<template name="headerClient">
+    <div style="margin:20px">
+    <h2>John and Mary Smith<br/><small>Refinance with cashout for debt consolidation</small></h2>
+    </div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li><a href="#">&nbsp;</a></li>
+        <li class="active"><a href="{{pathFor 'clientDocuments'}}">Documents</a></li>
+        <li><a href="{{pathFor 'clientActivity'}}">Activity</a></li>
+        <li><a href="{{pathFor 'clientProfile' 'aaabbbcccdddeee'}}">Profile</a></li>
+    </ul>
+</template>
