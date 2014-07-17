@@ -1,8 +1,13 @@
 <template name="applications">
     <h1>Applications <small>List</small></h1>
+    <table class="table table-striped">
     {{#each applications}}
-        <div>
-        {{client}}
-        </div>
+        <tr>
+            <td>
+                <a href="{{pathFor 'clientDocuments'}}">{{client}}</a>
+            </td>
+
+        </tr>
     {{/each}}
+    </table>
 </template>
