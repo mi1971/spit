@@ -10,6 +10,7 @@
     "gravatar": {},
     "filepicker-plus": {},
     "iron-router-progress": {},
-    "jquery-autosize": {}
+    "jquery-autosize": {},
+    "houston": {}
   }
 }

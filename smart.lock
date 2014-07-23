@@ -12,13 +12,14 @@
       "gravatar": {},
       "filepicker-plus": {},
       "iron-router-progress": {},
-      "jquery-autosize": {}
+      "jquery-autosize": {},
+      "houston": {}
     },
     "packages": {
       "bootstrap-3": {
         "git": "https://github.com/mangasocial/meteor-bootstrap-3.git",
-        "tag": "v3.1.1-1",
-        "commit": "63dd38968828bb8963636df93e9a1c45e2dfe67e"
+        "tag": "v3.2.0-1",
+        "commit": "17a63902fc6cf1096c5289d963c66cf28b474727"
       },
       "iron-router": {
         "git": "https://github.com/EventedMind/iron-router.git",
@@ -62,13 +63,18 @@
       },
       "iron-router-progress": {
         "git": "https://github.com/Multiply/iron-router-progress.git",
-        "tag": "v0.4.0",
-        "commit": "02f78bdaca4c13d59f548d5a0ce83408c34b56d1"
+        "tag": "v0.4.1",
+        "commit": "496fcda9a6ec352b4733725f60c6f280250c3541"
       },
       "jquery-autosize": {
         "git": "https://github.com/spendflow/meteor-jquery-autosize.git",
         "tag": "v1.17.8r1",
         "commit": "517be3d26cb2901f65d07de94d250e498d07dc48"
+      },
+      "houston": {
+        "git": "https://github.com/gterrono/houston.git",
+        "tag": "v1.0.7",
+        "commit": "a27e9e42d03764f09a6681a98945787fe1f6303d"
       },
       "blaze-layout": {
         "git": "https://github.com/EventedMind/blaze-layout.git",
@@ -79,6 +85,16 @@
         "git": "https://github.com/oortcloud/meteor-crypto-md5.git",
         "tag": "v3.1.2.2",
         "commit": "75bbb3eeace302122d3554a6212a6fe92553fa18"
+      },
+      "paginated-subscription": {
+        "git": "https://github.com/tmeasday/meteor-paginated-subscription.git",
+        "tag": "v0.2.2",
+        "commit": "2133a2163575f569f90253f81314f21b2bf08d20"
+      },
+      "spin": {
+        "git": "https://github.com/SachaG/meteor-spin.git",
+        "tag": "v2.0.3",
+        "commit": "23c1145472a710d5c93fa4beaca4e576caeb2f24"
       },
       "crypto-base": {
         "git": "https://github.com/oortcloud/meteor-crypto-base.git",

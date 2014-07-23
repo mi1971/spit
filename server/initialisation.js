@@ -5,11 +5,28 @@ Meteor.startup(function() {
     }
 
     if(Applications.find().count() < 1){
-        Applications.insert({
+        var appId = Applications.insert({
             client: 'John and June Citizen',
             amount: 355000,
             description: 'Purchase first home with 5% genuine savings'
         });
+
+        Activities.insert({
+            applicationId: appId,
+            title: 'Drivers Licence and Passport',
+            description: 'Licence should be clear, and copied on both sides',
+            type: 'client document',
+            completed: false
+        })
+
+        Activities.insert({
+            applicationId: appId,
+            title: 'Last 2 Payslips and Group Certificate',
+            description: 'Payslips recent and consecutive',
+            type: 'client document',
+            completed: false
+        })
+
         Applications.insert({
             client: 'Peter and Michelle Solomon',
             amount: 290000,

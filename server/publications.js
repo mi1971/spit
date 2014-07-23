@@ -31,6 +31,14 @@ Meteor.publish("activities", function(){
     return Activities.find();
 })
 
+Meteor.publish("activitiesForApplication", function(applicationId){
+    return Activities.find({applicationId:applicationId});
+})
+
 Meteor.publish("applications", function(){
     return Applications.find();
+})
+
+Meteor.publish("applicationSingle", function(applicationId){
+    return Applications.find(applicationId);
 })

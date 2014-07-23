@@ -7,7 +7,7 @@
     </head>
     <body>
     {{> headerClient}}
-    <div class="container">
+    <div class="container" style="padding-top:10px">
     {{> yield}}
     </div>
     </body>
@@ -15,12 +15,12 @@
 
 <template name="headerClient">
     <div style="margin:20px">
-    <h2>John and Mary Smith<br/><small>Refinance with cashout for debt consolidation</small></h2>
+    <h2>{{application.client}}<br/><small>{{application.description}}</small></h2>
     </div>
     <ul class="nav nav-tabs" role="tablist">
         <li><a href="#">&nbsp;</a></li>
         <li class="active"><a href="{{pathFor 'clientDocuments'}}">Documents</a></li>
-        <li><a href="{{pathFor 'clientActivity' _id=this._id}}">Activity</a></li>
-        <li><a href="{{pathFor 'clientProfile' 'aaabbbcccdddeee'}}">Profile</a></li>
+        <li><a href="{{pathFor 'clientActivity'}}">Activity</a></li>
+        <li><a href="{{pathFor 'clientProfile'}}">Profile</a></li>
     </ul>
 </template>
