@@ -14,8 +14,9 @@
 </template>
 
 <template name="headerClient">
+    {{#with application}}
     <div style="margin:20px">
-    <h2>{{application.client}}<br/><small>{{application.description}}</small></h2>
+    <h2>{{client}}<br/><small>{{description}}</small></h2>
     </div>
     <ul class="nav nav-tabs" role="tablist">
         <li><a href="#">&nbsp;</a></li>
@@ -23,4 +24,5 @@
         <li><a href="{{pathFor 'clientActivity'}}">Activity</a></li>
         <li><a href="{{pathFor 'clientProfile'}}">Profile</a></li>
     </ul>
+    {{/with}}
 </template>
