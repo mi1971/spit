@@ -1,0 +1,77 @@
+<template name="scenario">
+    {{> awizard}}
+    <br/><br/>
+    {{> creditCards}}
+
+</template>
+
+<template name="awizard">
+    <div class="wizard">
+        <a><span class="badge">1</span> Enquiry</a>
+        <a><span class="badge">2</span> Submission</a>
+        <a class="current"><span class="badge badge-inverse">3</span> Conditional</a>
+        <a><span class="badge">4</span> Unconditional</a>
+    </div>
+</template>
+
+<template name="creditCards">
+    <div class="col-sm-6">
+    <form class="form-horizontal" role="form">
+
+
+        <table class="grow-table">
+
+            <thead>
+            <td colspan="3">
+                No Credit Cards
+                <button id="addCreditCard" class="btn btn-sm pull-right">Add</button>
+            </td>
+            <td class="noline"></td>
+
+            </thead>
+
+            <thead>
+                <td>
+                    Description
+                </td>
+                <td class="dollar">
+                    Limit
+                </td>
+                <td class="dollar">
+                    Owing
+                </td>
+
+                <td class="noline">
+                    &nbsp;
+                </td>
+            </thead>
+
+            {{#each liabilities}}
+
+            <tr>
+                <td>
+                    <input class="description" type="text" value="{{description}}"/>
+                </td>
+                <td>
+                    <input type="text" class="limit dollar" value="{{limit}}"/>
+                </td>
+                <td>
+                    <input type="text" class="owing dollar" value="{{owing}}"/>
+                </td>
+                <td class="noline" style="width:1%">
+                    <!--<button class="delete btn btn-sm">-->
+                        <span class="glyphicon glyphicon-remove delete clickable"></span>
+                    <!--</button>-->
+                </td>
+            </tr>
+
+            {{/each}}
+
+
+        </table>
+
+
+    </form>
+    </div>
+
+</template>

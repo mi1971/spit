@@ -42,3 +42,7 @@ Meteor.publish("applications", function(){
 Meteor.publish("applicationSingle", function(applicationId){
     return Applications.find(applicationId);
 })
+
+Meteor.publish("liabilities", function(){
+    return Liabilities.find();
+})
