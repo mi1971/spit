@@ -14,6 +14,7 @@ Template.creditCards.events({
             limit: "0",
             owing: "0"
         });
+        $(".limit:last").focus().select();
 
     },
     'click .delete': function(e) {
@@ -22,3 +23,7 @@ Template.creditCards.events({
 
     }
 });
+
+Template.creditCards.hasCreditCards = function(){
+    return Liabilities.find().count() > 0;
+}

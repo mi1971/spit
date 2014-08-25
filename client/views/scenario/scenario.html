@@ -1,9 +1,18 @@
 <template name="scenario">
-    {{> awizard}}
-    <br/><br/>
+
+Scenario Page
+{{> nameSection}}
     {{> creditCards}}
 
 </template>
+
+
+<template name="nameSection">
+    <form class="form-horizontal" role="form">
+        <input type="text" value="{{name}}"/>
+    </form>
+</template>
+
 
 <template name="awizard">
     <div class="wizard">
@@ -22,13 +31,15 @@
         <table class="grow-table">
 
             <thead>
-            <td colspan="3">
+            <td colspan="3" style="vertical-align:middle">
                 No Credit Cards
                 <button id="addCreditCard" class="btn btn-sm pull-right">Add</button>
             </td>
-            <td class="noline"></td>
+            <td class="noline" style="width:40px;"></td>
 
             </thead>
+
+            {{#if hasCreditCards}}
 
             <thead>
                 <td>
@@ -46,6 +57,8 @@
                 </td>
             </thead>
 
+            {{/if}}
+
             {{#each liabilities}}
 
             <tr>
@@ -58,7 +71,7 @@
                 <td>
                     <input type="text" class="owing dollar" value="{{owing}}"/>
                 </td>
-                <td class="noline" style="width:1%">
+                <td class="noline" style="width:40px;">
                     <!--<button class="delete btn btn-sm">-->
                         <span class="glyphicon glyphicon-remove delete clickable"></span>
                     <!--</button>-->

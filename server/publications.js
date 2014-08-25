@@ -46,3 +46,7 @@ Meteor.publish("applicationSingle", function(applicationId){
 Meteor.publish("liabilities", function(){
     return Liabilities.find();
 })
+
+Meteor.publish("scenarios", function(){
+    return Scenarios.find();
+})

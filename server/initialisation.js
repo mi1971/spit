@@ -4,6 +4,39 @@ Meteor.startup(function() {
         createDummyContacts(300);
     }
 
+
+    if(Scenarios.find().count() < 1){
+        Scenarios.insert({
+            name: "Bill and Theresa Hobknobin",
+            liabilities: [{
+                description: "Credit Card 1",
+                limit: 5000,
+                owing: 1000
+            },
+            {
+                description: "Credit Card 2",
+                limit: 3000,
+                owing: 2000
+            }]
+        });
+
+        Scenarios.insert({
+            name: "Terry and Mary Django",
+            liabilities: [{
+                description: "Credit Card 1",
+                limit: 1000,
+                owing: 300
+            },
+                {
+                    description: "Credit Card 2",
+                    limit: 10000,
+                    owing: 2000
+                }]
+        })
+    }
+
+
+
     if(Applications.find().count() < 1){
         var appId = Applications.insert({
             client: 'John and June Citizen',

@@ -6,7 +6,6 @@
 standard-app-packages
 insecure
 bootstrap-3
-iron-router
 single-page-login
 accounts-password
 accounts-ui
@@ -18,3 +17,4 @@ filepicker-plus
 iron-router-progress
 jquery-autosize
 houston
+iron-router

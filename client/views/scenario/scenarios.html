@@ -1,0 +1,19 @@
+<template name="scenarios">
+    <h1>Scenarios <small>List</small></h1>
+    <div>
+    {{#each scenarios}}
+        {{> scenarioCard}}
+    {{/each}}
+    </div>
+</template>
+
+<template name="scenarioCard">
+    <a href="{{pathFor 'scenario'}}">
+        <div class="mi-card">
+            <img src="person-icon.jpg" class="pull-left" style="width:30px;" />
+            <div style="padding-left:40px">
+            <div style="color:#424242"><b>{{name}}</b></div>
+            </div>
+        </div>
+    </a>
+</template>
