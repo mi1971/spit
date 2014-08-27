@@ -9,10 +9,14 @@
 Template.creditCards.events({
     'click #addCreditCard': function(e) {
         e.preventDefault();
+//        debugger;
+//        return;
         Liabilities.insert({
             description: "Credit Card",
             limit: "0",
-            owing: "0"
+            owing: "0",
+            type: "Card",
+            scenario: this.scenario._id
         });
         $(".limit:last").focus().select();
 

@@ -1,16 +1,21 @@
 <template name="scenario">
 
-Scenario Page
-{{> nameSection}}
+    <form class="form-horizontal" role="form">
+    {{> nameSection}}
     {{> creditCards}}
-
+    </form>
 </template>
 
 
 <template name="nameSection">
-    <form class="form-horizontal" role="form">
-        <input type="text" value="{{name}}"/>
-    </form>
+        <div class="form-group">
+            <label for="txtName" class="col-sm-4 control-label">Scenario Name</label>
+
+            <div class="col-sm-8">
+                <input id="txtName" type="text" value="{{scenario.name}}" class="form-control" placeholder="Scenario Name">
+            </div>
+        </div>
+
 </template>
 
 
@@ -59,7 +64,7 @@ Scenario Page
 
             {{/if}}
 
-            {{#each liabilities}}
+            {{#each cards}}
 
             <tr>
                 <td>
