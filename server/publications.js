@@ -47,6 +47,10 @@ Meteor.publish("liabilities", function(){
     return Liabilities.find();
 })
 
+Meteor.publish("liabilitiesForScenario", function(scenarioId){
+    return Liabilities.find({scenarioId:scenarioId});
+})
+
 Meteor.publish("scenarios", function(){
     return Scenarios.find();
 })

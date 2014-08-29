@@ -38,7 +38,7 @@
             <thead>
             <td colspan="3" style="vertical-align:middle">
                 No Credit Cards
-                <button id="addCreditCard" class="btn btn-sm pull-right">Add</button>
+
             </td>
             <td class="noline" style="width:40px;"></td>
 
@@ -68,13 +68,13 @@
 
             <tr>
                 <td>
-                    <input class="description" type="text" value="{{description}}"/>
+                    <input class="description form-control" type="text" value="{{description}}" placeholder="Description"/>
                 </td>
                 <td>
-                    <input type="text" class="limit dollar" value="{{limit}}"/>
+                    <input type="text" class="limit dollar form-control" value="{{limit}}" placeholder="Limit"/>
                 </td>
                 <td>
-                    <input type="text" class="owing dollar" value="{{owing}}"/>
+                    <input type="text" class="owing dollar form-control" value="{{owing}}" placeholder="Owing"/>
                 </td>
                 <td class="noline" style="width:40px;">
                     <!--<button class="delete btn btn-sm">-->
@@ -84,9 +84,16 @@
             </tr>
 
             {{/each}}
+            <tr>
+            <td colspan="4" style="vertical-align:middle">
+                <button id="addCreditCard" class="btn btn-sm">Add Card</button>
+
+            </td>
+            </tr>
 
 
         </table>
+
 
 
     </form>

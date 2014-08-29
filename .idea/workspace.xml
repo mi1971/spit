@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20d99ffc-a06a-4a80-a933-dd288b4aac2d" name="Default" comment="Playing with activities">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/collections/liabilities.js" afterPath="$PROJECT_DIR$/lib/collections/liabilities.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/main.css" afterPath="$PROJECT_DIR$/client/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/publications.js" afterPath="$PROJECT_DIR$/server/publications.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/router.js" afterPath="$PROJECT_DIR$/lib/router.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/scenario/scenario.css" afterPath="$PROJECT_DIR$/client/views/scenario/scenario.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/scenario/scenario.html" afterPath="$PROJECT_DIR$/client/views/scenario/scenario.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/scenario/scenario.js" afterPath="$PROJECT_DIR$/client/views/scenario/scenario.js" />
     </list>
@@ -30,8 +34,8 @@
       <file leaf-file-name="router.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/router.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="2535">
-              <caret line="30" column="47" selection-start-line="30" selection-start-column="47" selection-end-line="30" selection-end-column="47" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="2535">
+              <caret line="24" column="41" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -47,26 +51,47 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="initialisation.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/initialisation.js">
+      <file leaf-file-name="scenario.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/views/scenario/scenario.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="12" max-vertical-offset="2235">
-              <caret line="26" column="28" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
+            <state vertical-scroll-proportion="-12.25" vertical-offset="1026" max-vertical-offset="1605">
+              <caret line="88" column="79" selection-start-line="88" selection-start-column="79" selection-end-line="88" selection-end-column="79" />
+              <folding>
+                <element signature="n#style#0;n#td#0;n#thead#0;n#table#0;n#form#0;n#div#0;n#template#3;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#1;n#thead#0;n#table#0;n#form#0;n#div#0;n#template#3;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#3;n#tr#0;n#table#0;n#form#0;n#div#0;n#template#3;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#1;n#table#0;n#form#0;n#div#0;n#template#3;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="scenario.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/views/scenario/scenario.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="735">
+              <caret line="24" column="0" selection-start-line="24" selection-start-column="2" selection-end-line="28" selection-end-column="3" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scenario.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/views/scenario/scenario.html">
+      <file leaf-file-name="publications.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/publications.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.0" vertical-offset="630" max-vertical-offset="1500">
-              <caret line="66" column="25" selection-start-line="66" selection-start-column="25" selection-end-line="66" selection-end-column="25" />
-              <folding>
-                <element signature="n#style#0;n#td#0;n#thead#0;n#table#0;n#form#0;n#div#0;n#template#3;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#td#1;n#thead#0;n#table#0;n#form#0;n#div#0;n#template#3;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#td#3;n#tr#0;n#table#0;n#form#0;n#div#0;n#template#3;n#!!top" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="314" max-vertical-offset="915">
+              <caret line="50" column="39" selection-start-line="50" selection-start-column="39" selection-end-line="50" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2130">
+              <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -76,16 +101,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-15.0" vertical-offset="300" max-vertical-offset="1485">
               <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="50" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activities.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/views/activity/activities.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="195">
-              <caret line="0" column="26" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -104,8 +119,8 @@
       <file leaf-file-name="scenario.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/views/scenario/scenario.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4990758" vertical-offset="0" max-vertical-offset="570">
-              <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
+            <state vertical-scroll-proportion="0.52680224" vertical-offset="0" max-vertical-offset="780">
+              <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -116,18 +131,8 @@
       <file leaf-file-name="liabilities.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/collections/liabilities.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="495">
-              <caret line="0" column="38" selection-start-line="0" selection-start-column="38" selection-end-line="0" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="scenarios.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/collections/scenarios.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="495">
-              <caret line="0" column="36" selection-start-line="0" selection-start-column="36" selection-end-line="0" selection-end-column="36" />
+            <state vertical-scroll-proportion="-3.0555556" vertical-offset="0" max-vertical-offset="555">
+              <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -178,7 +183,6 @@
         <option value="$PROJECT_DIR$/client/home.js" />
         <option value="$PROJECT_DIR$/client/utils/jquery-extensions.js" />
         <option value="$PROJECT_DIR$/client/views/applications/application.html" />
-        <option value="$PROJECT_DIR$/client/main.css" />
         <option value="$PROJECT_DIR$/client/views/applications/application.css" />
         <option value="$PROJECT_DIR$/client/views/contacts/contacts.html" />
         <option value="$PROJECT_DIR$/client/views/contacts/contact.html" />
@@ -193,14 +197,15 @@
         <option value="$PROJECT_DIR$/client/layout-client.html" />
         <option value="$PROJECT_DIR$/packages/iron-router-progress/README.md" />
         <option value="$PROJECT_DIR$/packages/iron-router-progress/progress.coffee" />
-        <option value="$PROJECT_DIR$/lib/collections/liabilities.js" />
-        <option value="$PROJECT_DIR$/client/views/scenario/scenario.css" />
-        <option value="$PROJECT_DIR$/server/publications.js" />
         <option value="$PROJECT_DIR$/lib/collections/scenarios.js" />
         <option value="$PROJECT_DIR$/server/initialisation.js" />
         <option value="$PROJECT_DIR$/client/views/scenario/scenarios.html" />
-        <option value="$PROJECT_DIR$/lib/router.js" />
+        <option value="$PROJECT_DIR$/lib/collections/liabilities.js" />
+        <option value="$PROJECT_DIR$/client/views/scenario/scenario.css" />
+        <option value="$PROJECT_DIR$/client/main.css" />
         <option value="$PROJECT_DIR$/client/views/scenario/scenario.html" />
+        <option value="$PROJECT_DIR$/server/publications.js" />
+        <option value="$PROJECT_DIR$/lib/router.js" />
         <option value="$PROJECT_DIR$/client/views/scenario/scenario.js" />
       </list>
     </option>
@@ -731,13 +736,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1740">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/views/applications/application.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="555" max-vertical-offset="1605">
@@ -918,30 +916,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/scenario/scenario.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="735">
-          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/publications.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="254" max-vertical-offset="855">
-          <caret line="50" column="20" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/collections/liabilities.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
-          <caret line="0" column="38" selection-start-line="0" selection-start-column="38" selection-end-line="0" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/collections/scenarios.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
@@ -962,14 +936,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.66731143" vertical-offset="0" max-vertical-offset="517">
           <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/scenario/scenarios.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.25" vertical-offset="0" max-vertical-offset="360">
-          <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
           <folding />
         </state>
       </provider>
@@ -998,30 +964,71 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/router.js">
+    <entry file="file://$PROJECT_DIR$/lib/collections/liabilities.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="2535">
-          <caret line="30" column="47" selection-start-line="30" selection-start-column="47" selection-end-line="30" selection-end-column="47" />
+        <state vertical-scroll-proportion="-3.0555556" vertical-offset="0" max-vertical-offset="555">
+          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/scenario/scenario.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="735">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="2" selection-end-line="28" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2130">
+          <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/scenario/scenarios.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.25" vertical-offset="0" max-vertical-offset="360">
+          <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/views/scenario/scenario.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.0" vertical-offset="630" max-vertical-offset="1500">
-          <caret line="66" column="25" selection-start-line="66" selection-start-column="25" selection-end-line="66" selection-end-column="25" />
+        <state vertical-scroll-proportion="-12.25" vertical-offset="1026" max-vertical-offset="1605">
+          <caret line="88" column="79" selection-start-line="88" selection-start-column="79" selection-end-line="88" selection-end-column="79" />
           <folding>
             <element signature="n#style#0;n#td#0;n#thead#0;n#table#0;n#form#0;n#div#0;n#template#3;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#1;n#thead#0;n#table#0;n#form#0;n#div#0;n#template#3;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#3;n#tr#0;n#table#0;n#form#0;n#div#0;n#template#3;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#1;n#table#0;n#form#0;n#div#0;n#template#3;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="2535">
+          <caret line="24" column="41" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/publications.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="314" max-vertical-offset="915">
+          <caret line="50" column="39" selection-start-line="50" selection-start-column="39" selection-end-line="50" selection-end-column="39" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/views/scenario/scenario.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4990758" vertical-offset="0" max-vertical-offset="570">
-          <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
+        <state vertical-scroll-proportion="0.52680224" vertical-offset="0" max-vertical-offset="780">
+          <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>

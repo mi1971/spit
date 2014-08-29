@@ -22,11 +22,11 @@
     color: #eaeaea;
 }
 
-.grow-table input[type="text"]{
-    padding:4px;
-    border:solid 1px #eaeaea;
-    width:100%;
-}
+/*.grow-table input[type="text"]{*/
+    /*padding:4px;*/
+    /*border:solid 1px #eaeaea;*/
+    /*width:100%;*/
+/*}*/
 
 .grow-table .dollar{
     width:90px !important;

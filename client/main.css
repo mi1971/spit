@@ -3,6 +3,32 @@ body {
     /*background-color: #F3F3F3*/
 }
 
+/* Remove ugly shadows on iOS */
+
+input[type="text"], input[type="email"], input[type="search"], input[type="password"] {
+    -webkit-appearance: caret;
+    -moz-appearance: caret; /* mobile firefox too! */
+}
+
+/* Lighten placeholder text */
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: #E6E6E6 !important;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #E6E6E6 !important;
+    opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #E6E6E6 !important;
+    opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #E6E6E6 !important;
+}
+
+/* Iron router stuff */
+
 #iron-router-progress {
     background-color : #58ACFA;
 }
