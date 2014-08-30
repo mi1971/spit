@@ -1,17 +1,25 @@
 <template name="scenario">
 
     <form class="form-horizontal" role="form">
-    {{> nameSection}}
-    {{> liabilitiesSection}}
+    <div class="row">
+        <div class="col-lg-9">
+            {{> nameSection}}
+            {{> liabilitiesSection}}
+        </div>
+        <div class="col-lg-3">
+            <div style="background-color: #c0c0c0;border: solid 1px #c0c0c0;height:500px;"></div>
+        </div>
+    </div>
+
     </form>
 </template>
 
 <template name="liabilitiesSection">
     <div class="row">
-        <div class="col-sm-6">
+        <div class="col-md-6">
             {{> creditCards}}
         </div>
-        <div class="col-sm-6">
+        <div class="col-md-6">
             {{> commitments}}
         </div>
     </div>
@@ -121,9 +129,7 @@
         {{#if hasCommitments}}
 
         <thead>
-        <td>
-            Type
-        </td>
+
         <td>
             Description
         </td>
@@ -144,9 +150,7 @@
         {{#each commitments}}
 
         <tr>
-            <td>
-                <input class="type form-control" type="text" value="{{type}}" placeholder="Type"/>
-            </td>
+
             <td>
                 <input class="description form-control" type="text" value="{{description}}" placeholder="Description"/>
             </td>

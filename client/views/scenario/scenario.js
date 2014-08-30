@@ -39,6 +39,7 @@ Template.creditCards.events({
             limit: limit,
             owing: owing
         }});
+        toastr.success('Credit card saved');
     }
 });
 
