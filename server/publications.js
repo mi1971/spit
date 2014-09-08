@@ -54,3 +54,7 @@ Meteor.publish("liabilitiesForScenario", function(scenarioId){
 Meteor.publish("scenarios", function(){
     return Scenarios.find();
 })
+
+Meteor.publish("lookups", function(){
+    return Lookups.find();
+})

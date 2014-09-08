@@ -5,6 +5,7 @@
         <div class="col-lg-9">
             {{> nameSection}}
             {{> liabilitiesSection}}
+            {{> tester}}
         </div>
         <div class="col-lg-3">
             <div style="background-color: #c0c0c0;border: solid 1px #c0c0c0;height:500px;"></div>
@@ -149,10 +150,18 @@
 
         {{#each commitments}}
 
-        <tr>
+        <tr date-id="{{_id}}">
 
             <td>
-                <input class="description form-control" type="text" value="{{description}}" placeholder="Description"/>
+                <select class="form-control description" name="Description" value="{{description}}" placeholder="Description" >
+                    <option {{isSelected "Car Loan"}}>Car Loan</option>
+                    <option {{isSelected "Personal Loan"}}>Personal Loan</option>
+                    <option {{isSelected "Lease"}}>Lease</option>
+                    <option {{isSelected "Rent"}}>Rent</option>
+                    <option {{isSelected "Child Support"}}>Child Support</option>
+                </select>
+
+                <!--<input class="form-control typeahead description" name="description" type="text" value="{{description}}" placeholder="Description"/>-->
             </td>
             <td>
                 <input type="text" class="payment dollar form-control" value="{{payment}}" placeholder="Payment"/>
@@ -173,9 +182,14 @@
                 <button id="addCommitment" class="btn">Add Commitment</button>
             </td>
         </tr>
-
-
     </table>
 
-
 </template>
+
+<template name="liabilityDropItem">
+    <span class="label">{{description}}</span>
+</template>
+
+        <template name="tester">
+            <input type="text" id="test" class="form-control"/>
+        </template>

@@ -6,6 +6,12 @@
 //    // do something...
 //}
 
+Template.commitments.rendered = function() {
+    $('select.commitment-type').each(function(){
+        alert ('hello')
+    }) //.val()) //" option").each(function() { alert(this.text); this.selected = (this.text == "Personal Loan"); });
+}
+
 Template.creditCards.events({
     'click #addCreditCard': function(e) {
         e.preventDefault();
@@ -83,9 +89,24 @@ Template.commitments.events({
             payment: payment,
             owing: owing
         }});
+        toastr.success('Commitment saved');
     }
 });
 
 Template.commitments.hasCommitments = function(){
     return Liabilities.find().count() > 0;
 }
+
+Template.commitments.commitmentList = function() {
+    return ["one", "two", "three"];
+    return Lookups.find().fetch().map(function(it){ return it.name; });
+};
+
+Template.commitments.isSelected = function(str){
+
+    if(str == this.description)
+         return "selected"
+    else
+        return "";
+}
+

@@ -4,6 +4,21 @@ Meteor.startup(function() {
         createDummyContacts(300);
     }
 
+    if(Lookups.find().count() < 1) {
+        Lookups.insert({
+            name: "Personal Loan",
+            type: "Commitment"
+        });
+        Lookups.insert({
+            name: "Car Loan",
+            type: "Commitment"
+        });
+        Lookups.insert({
+            name: "Car Lease",
+            type: "Commitment"
+        });
+    }
+
 
     if(Scenarios.find().count() < 1){
         Scenarios.insert({
@@ -142,3 +157,4 @@ function getAreaCode(cityStatePostcode){
         return "08";
 
 }
+
