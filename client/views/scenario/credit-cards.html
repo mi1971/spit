@@ -1,0 +1,64 @@
+<template name="creditCards">
+
+    <table class="grow-table">
+
+        <thead>
+        <td colspan="3" style="vertical-align:middle">
+            No Credit Cards
+
+        </td>
+        <td class="noline" style="width:40px;"></td>
+
+        </thead>
+
+        {{#if hasCreditCards}}
+
+        <thead>
+        <td>
+            Description
+        </td>
+        <td class="dollar">
+            Limit
+        </td>
+        <td class="dollar">
+            Owing
+        </td>
+
+        <td class="noline">
+            &nbsp;
+        </td>
+        </thead>
+
+        {{/if}}
+
+        {{#each cards}}
+
+        <tr data-id="{{_id}}">
+            <td>
+                <input class="description form-control" type="text" value="{{description}}" placeholder="Description"/>
+            </td>
+            <td>
+                <input type="text" class="limit dollar form-control" value="{{limit}}" placeholder="Limit"/>
+            </td>
+            <td>
+                <input type="text" class="owing dollar form-control" value="{{owing}}" placeholder="Owing"/>
+            </td>
+            <td class="noline" style="width:40px;">
+                <!--<button class="delete btn btn-sm">-->
+                <span class="glyphicon glyphicon-remove delete clickable"></span>
+                <!--</button>-->
+            </td>
+        </tr>
+
+        {{/each}}
+        <tr>
+            <td colspan="4" style="vertical-align:middle">
+                <button id="addCreditCard" class="btn">Add Card</button>
+            </td>
+        </tr>
+
+
+    </table>
+
+
+</template>

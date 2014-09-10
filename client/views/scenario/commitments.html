@@ -1,0 +1,71 @@
+<template name="commitments">
+
+    <table class="grow-table">
+
+        <thead>
+        <td colspan="3" style="vertical-align:middle">
+            No Other Commitments
+
+        </td>
+        <td class="noline" style="width:40px;"></td>
+
+        </thead>
+
+        {{#if hasCommitments}}
+
+        <thead>
+
+        <td>
+            Description
+        </td>
+        <td class="dollar">
+            Payment
+        </td>
+        <td class="dollar">
+            Owing
+        </td>
+
+        <td class="noline">
+            &nbsp;
+        </td>
+        </thead>
+
+        {{/if}}
+
+        {{#each commitments}}
+
+        <tr data-id="{{_id}}">
+
+            <td>
+                <select class="form-control description" name="Description" value="{{description}}" placeholder="Description" >
+                    <option {{isSelected "Car Loan"}}>Car Loan</option>
+                    <option {{isSelected "Personal Loan"}}>Personal Loan</option>
+                    <option {{isSelected "Lease"}}>Lease</option>
+                    <option {{isSelected "Rent"}}>Rent</option>
+                    <option {{isSelected "Child Support"}}>Child Support</option>
+                </select>
+
+                <!--<input class="form-control typeahead description" name="description" type="text" value="{{description}}" placeholder="Description"/>-->
+            </td>
+            <td>
+                <input type="text" class="payment dollar form-control" value="{{payment}}" placeholder="Payment"/>
+            </td>
+            <td>
+                <input type="text" class="owing dollar form-control" value="{{owing}}" placeholder="Owing"/>
+            </td>
+            <td class="noline" style="width:40px;">
+                <!--<button class="delete btn btn-sm">-->
+                <span class="glyphicon glyphicon-remove delete clickable"></span>
+                <!--</button>-->
+            </td>
+        </tr>
+
+        {{/each}}
+        <tr>
+            <td colspan="4" style="vertical-align:middle">
+                <button id="addCommitment" class="btn">Add Commitment</button>
+            </td>
+        </tr>
+    </table>
+
+</template>

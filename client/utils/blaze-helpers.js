@@ -12,3 +12,10 @@ UI.registerHelper("formatDate", function(datetime, format) {
         return datetime;
     }
 });
+
+UI.registerHelper("selectedMatching", function(str1, str1) {
+    if (str1 == str2)
+        return "selected"
+    else
+        return "";
+});
